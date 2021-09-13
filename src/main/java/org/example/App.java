@@ -19,15 +19,15 @@ public class App
         String numSecondString = input.nextLine();
 
         //conversions and processing
-        int numFirstInt = Integer.parseInt(numFirstString);
-        int numSecondInt = Integer.parseInt(numSecondString);
+        double numFirstInt = Double.parseDouble(numFirstString);
+        double numSecondInt = Double.parseDouble(numSecondString);
 
-        int numAdd = numFirstInt + numSecondInt;
-        int numSubtract = numFirstInt - numSecondInt;
-        int numMultiply = numFirstInt * numSecondInt;
-        int numDivide = numFirstInt / numSecondInt;
+        double numAdd = numFirstInt + numSecondInt;
+        double numSubtract = numFirstInt - numSecondInt;
+        double numMultiply = numFirstInt * numSecondInt;
+        double numDivide = numFirstInt / numSecondInt;
 
         //output
-        System.out.println(String.format("%d + %d = %d \n%d - %d = %d \n%d * %d = %d \n%d / %d = %d", numFirstInt ,numSecondInt, numAdd, numFirstInt, numSecondInt, numSubtract, numFirstInt, numSecondInt, numMultiply, numFirstInt, numSecondInt, numDivide));
+        System.out.println(String.format("%.2f + %.2f = %.2f \n%.2f - %.2f = %.2f \n%.2f * %.2f = %.2f \n%.2f / %.2f = %.2f", numFirstInt ,numSecondInt, numAdd, numFirstInt, numSecondInt, numSubtract, numFirstInt, numSecondInt, numMultiply, numFirstInt, numSecondInt, numDivide));
     }
 }
